@@ -8,6 +8,12 @@ body{
     grid-template-columns: repeat(3, 1fr); 
     align-items: center;
     padding:92px 49px 92px 51px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .cover{
@@ -37,20 +43,25 @@ body{
 
 .header__menu{
     justify-self:start;
-    
+    white-space: nowrap;
 }
 
 .header__logo{
     justify-self:center;
-    padding-bottom: 4px;
 }
 
+.header__logo-image{
+    display: block;
+    width: 148px;
+    padding:0 5px ;
+}
 
 .header__links-list{
     display: flex;
     gap: 32px;
     flex-direction: row;
     list-style:circle;
+   
     
 }
 
@@ -58,20 +69,28 @@ body{
     list-style:none;
 }
 .header__link{
-    text-decoration: underline;
+    border-bottom: 1px solid black;
 }
 .header__links-list-item .header__link_active{
+    border-bottom: 0px;
+}
+
+
+
+.noneDecor{
     text-decoration: none;
+    border-bottom: 1px solid black;
 }
-
-.header__logo{
-    display: block;
-    width: 148px;
-}
-
-
 .header__address{
     justify-self:end;
+     color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-decoration: none;
+    
 }
 
 .overlay{
@@ -95,17 +114,25 @@ body{
     text-transform: uppercase;
 }
 
+
 .cover__letter-spacing{
     letter-spacing: 60px;
 }
 .cover__text-center{
     text-align: center;
+    margin:20px 0;
+    line-height: 100%; /* 115px */
 }
 
 .cover__text-right{
     text-align: right;
-}
+    line-height: 100%;
 
+}
+.text-13{
+    text-align: right;
+    letter-spacing: 0px;
+}
 .under__text{
     padding: 0px 50px 50px;
     display:flex;
@@ -146,7 +173,6 @@ body{
 .cards__page{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap:25px;
     position: relative;
     z-index:0;
@@ -158,7 +184,7 @@ body{
     justify-content: space-between;
     position: relative;
     width: 430px;
-    height: 450px;
+    min-height: 450px;
     color: white;
     background-color: rgb(0 0 0 /.5);
 }
@@ -199,12 +225,10 @@ body{
 
 .logo__column{
     display: flex;
-    width: 430px;
-    height: 240px;
+ 
     padding: 0px 95px;
     justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+
 }
 
 .about__logo{
@@ -252,12 +276,26 @@ body{
 }
 
 .footer__address{
-    
+    justify-self:end;
+     color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.3px;
+    text-decoration: none;
 }
 
 .footer__menu-list{
     display: flex;
     flex-direction: column;
+    color: #000;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
 .footer__menu-list-item{
@@ -277,7 +315,7 @@ body{
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
-    gap:25px;
+    gap:50px;
 }
 
 .footer__social-icon{
